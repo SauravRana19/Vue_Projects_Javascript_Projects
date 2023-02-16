@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     countdown() {
-      var dest = new Date("feb 20 , 2023 10:00:00").getTime();
+      var dest = new Date("dec 31 , 2023 10:00:00").getTime();
 
       var x = setInterval(function () {
         var now = new Date().getTime();
