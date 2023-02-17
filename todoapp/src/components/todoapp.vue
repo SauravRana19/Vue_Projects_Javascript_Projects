@@ -11,7 +11,11 @@
         />
       </div>
       <div class="col-md-4">
-        <button class="btn btn-success" type="submit" @click="additem()">
+        <button
+          class="btn btn-success"
+          type="submit"
+          @click="additem()"
+        >
           Add
         </button>
       </div>
@@ -21,6 +25,9 @@
         <ul class="list-group">
           <li class="list-group-item" id="b">
             {{ value }}<span class="removebtn">Remove</span>
+          </li>
+          <li>
+            {{ data }}
           </li>
         </ul>
       </div>
@@ -32,25 +39,21 @@ export default {
   name: "tod-app",
   data() {
     return {
-      value: "",
+      value: [],
+      data: "",
     };
   },
   methods: {
     additem() {
-      const data = document.querySelector("#task").value;
-      this.createitem(data);
-    },
-    createitem(data) {
-      const items = localStorage.getItem("todoapp")
-        ? JSON.parse(localStorage.getItem("todoapp"))
-        : [];
-      items.push(data);
-      localStorage.setItem("todoapp", JSON.stringify(items));
-      var b = localStorage.getItem("todoapp");
-      this.value = b;
-      document.getElementById("task").innerText = " "
+      let a = document.querySelector("#task").value;
+      console.log("a value", a);
+      this.value.push(a)
+      localStorage.setItem("todoapp", this.value);
     },
   },
+  mounted() {
+    this.data = localStorage.getItem("todoapp");
+  }
 };
 </script>
 <style>
