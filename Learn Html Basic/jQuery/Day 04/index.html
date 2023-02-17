@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 500px;
+            height: 700px;
+            margin: auto;
+            border: 2px red solid
+        }
+        
+        .child {
+            width: 400px;
+            height: 200px;
+            margin: 15px auto;
+            border: 2px black solid;
+        }
+        
+        .box {
+            height: 150px;
+            width: 30%;
+            text-align: center;
+            font-size: 30px;
+            margin: 4px;
+            border: 2px blue solid;
+            float: left;
+        }
+        
+        #test {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <div class="box">0</div>
+            <div class="box">1</div>
+            <div class="box">2</div>
+        </div>
+        <div class="child">
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+        <div class="child">
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box" id="test">8</div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        // var box = $(".box").eq(0)
+        // console.log(box)
+        // console.log(box.parent())
+        // console.log("box.parents()", box.parents())
+        // console.log("box.parentsUntil('html')", box.parentsUntil("html"))
+        // var childBox = $(".child").eq(0)
+        // console.log(childBox.children())
+
+        // var parent = $(".parent")
+        // console.log(parent.find("#test"))
+
+        var testBox = $("#test")
+            // console.log(testBox.nextAll())
+        console.log(testBox.prevAll())
+    </script>
+</body>
+
+</html>

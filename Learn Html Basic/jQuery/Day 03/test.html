@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        h1,
+        input {
+            font-size: 40px;
+            display: block;
+            margin-top: 20px;
+        }
+        
+        .danger {
+            color: rgb(185, 16, 16);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="data">
+    <h1>
+
+    </h1>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        const resBox = $("h1")
+        $("#data").keyup(
+            function() {
+                var inputText = $(this).val();
+                if (inputText.length >= 5) {
+                    resBox.addClass("danger")
+                } else {
+                    resBox.removeClass("danger")
+                }
+                resBox.text(inputText)
+            }
+        )
+    </script>
+</body>
+
+</html>

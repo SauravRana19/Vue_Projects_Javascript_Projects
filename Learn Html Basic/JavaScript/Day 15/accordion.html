@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .accordion {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            width: 75%;
+            margin: auto;
+            margin-top: 10px;
+        }
+        
+        .accordion h4 {
+            box-shadow: 0px 0px 3px grey;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .accordion p {
+            box-shadow: 0px 0px 3px grey;
+            padding: 5px;
+            height: 0px;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        
+        .show {
+            height: 150px !important;
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="accordion">
+        <h4 onclick="toggleData(this)">Testing</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore illo, eos eveniet repellat enim! Vero natus, sed nihil, eos ipsum voluptates, sequi modi tempora reprehenderit cupiditate dolores provident omnis?
+        </p>
+    </div>
+    <div class="accordion">
+        <h4 onclick="toggleData(this)">Testing</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore illo, eos eveniet repellat enim! Vero natus, sed nihil, eos ipsum voluptates, sequi modi tempora reprehenderit cupiditate dolores provident omnis?
+        </p>
+    </div>
+    <div class="accordion">
+        <h4 onclick="toggleData(this)">Testing</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore illo, eos eveniet repellat enim! Vero natus, sed nihil, eos ipsum voluptates, sequi modi tempora reprehenderit cupiditate dolores provident omnis?
+        </p>
+    </div>
+
+    <div class="accordion">
+        <h4 onclick="toggleData(this)">Testing</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore illo, eos eveniet repellat enim! Vero natus, sed nihil, eos ipsum voluptates, sequi modi tempora reprehenderit cupiditate dolores provident omnis?
+        </p>
+    </div>
+    <div class="accordion">
+        <h4 onclick="toggleData(this)">Testing</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tempore illo, eos eveniet repellat enim! Vero natus, sed nihil, eos ipsum voluptates, sequi modi tempora reprehenderit cupiditate dolores provident omnis?
+        </p>
+    </div>
+
+
+    <script>
+        // console.log(document.getElementsByTagName("div"))
+
+        function toggleData(elem) {
+            console.log(elem, elem.nextElementSibling);
+            // elem.nextElementSibling.style.display = "block"
+            // elem.nextElementSibling.classList.add("show")
+            // elem.nextElementSibling.classList.remove("show")
+            elem.nextElementSibling.classList.toggle("show")
+        }
+    </script>
+</body>
+
+</html>

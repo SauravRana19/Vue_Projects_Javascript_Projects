@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.parent{
+			width: 850px;
+			border:2px black solid;
+			padding: 10px;
+		}
+		.box{
+			width:150px;
+			height: 40px;
+			background: red;
+			margin: 10px;
+			color: white;
+			font-size: 30px;
+			/*animation-name: race;
+			animation-duration: 2s;
+			animation-delay: 1
+			cols;*/
+			animation: 10s 1s 1 alternate race;
+			/*duration delay*/
+			/*reverse, alternate, alternate-reverse, normal*/
+		}		
+		@keyframes race{
+			/*linear animation*/
+			from{
+				transform: translateX(0px);
+			}
+			to{
+				transform: translateX(700px);
+			}
+		}
+		/*@keyframes race{
+			0%{
+				transform: translateX(0);
+			}
+			50%{
+	
+			}
+			100%{
+				transform: translateX(400px);
+			}
+		}*/
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="box" style="animation-timing-function: linear;">linear</div>
+		<div class="box" style="animation-timing-function: ease">ease</div>
+		<div class="box" style="animation-timing-function: ease-in">ease-in</div>
+		<div class="box" style="animation-timing-function: ease-out">ease-out</div>
+	</div>
+</body>
+</html>

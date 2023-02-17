@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            font-family: verdana;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="output">
+        0:0:0
+    </h1>
+    <script>
+        function clock() {
+            var date = new Date()
+            let hrs = date.getHours()
+            let mins = date.getMinutes()
+            let secs = date.getSeconds()
+            output.innerHTML = `${hrs} : ${mins} : ${secs}`
+        }
+
+        setInterval(
+            function() {
+                clock();
+            },
+            1000
+        )
+
+        clock()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="password" name="" id="pass_box">
+    <button id="btn">Show Password</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        const pass_box = $("#pass_box")
+        $("#btn").click(
+            function() {
+                // console.log(pass_box.attr("type")) //get
+                // pass_box.attr("type", "text") // set
+                if (pass_box.attr("type") == "text") { //get
+                    pass_box.attr("type", "password"); // set
+                    $(this).text("Show Button") // innerText
+                } else {
+                    pass_box.attr("type", "text"); // set
+                    $(this).text("Hide Button")
+                }
+                $(this).toggleClass("demo")
+            }
+        )
+    </script>
+</body>
+
+</html>

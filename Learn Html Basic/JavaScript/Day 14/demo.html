@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 750px;
+            height: 500px;
+            border: 2px red solid;
+            margin: 50px auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .col {
+            width: 200px;
+            font-size: 50px;
+            text-align: center;
+            height: 150px;
+            margin: 5px;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">1</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">2</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">3</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">4</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">5</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">6</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">7</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">8</div>
+        <div class="col" onmouseenter="toggleColor(true,this)" onmouseleave="toggleColor(false,this)">9</div>
+    </div>
+    <script>
+        // var cols = document.getElementsByClassName("col")
+        var seq = [];
+
+        function toggleColor(flag, box) {
+            // console.log(box)
+            if (flag == true) {
+                if (seq.indexOf(box.innerText) == "-1") // not there
+                    seq.push(box.innerText)
+                box.style.background = "red"
+            } else {
+                // cols[0].style.background = "white"
+                box.style.background = "white"
+            }
+        }
+    </script>
+</body>
+
+</html>

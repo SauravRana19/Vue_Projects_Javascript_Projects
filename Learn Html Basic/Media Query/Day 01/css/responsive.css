@@ -1,0 +1,25 @@
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    /* Medium Screen Device */
+    /* Monitors */
+    .box {
+        width: 900px;
+        background-color: blue;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+    /* Small Devices */
+    /* Tablets */
+    .box {
+        width: 700px;
+        background-color: green;
+    }
+}
+
+@media only screen and (min-width:0) and (max-width:767px) {
+    /* Mobile Phones */
+    .box {
+        width: 100%;
+        background-color: yellow;
+    }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 10px;
+            width: 250px;
+            height: 40px;
+            border: 1px black solid;
+        }
+        
+        #meter {
+            transition: 1s;
+            width: 0%;
+            height: 40px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="test" onkeyup="getData()">
+    <div class="box">
+        <div id="meter"></div>
+    </div>
+    <script>
+        var inputBox = document.getElementById("test")
+        var meterBox = document.getElementById("meter")
+
+        function getData() {
+            var len = inputBox.value.length
+            if (len > 0 && len <= 5) {
+                meterBox.style.width = "35%"
+                meterBox.style.background = "red"
+            } else if (len >= 6 && len <= 10) {
+                meterBox.style.width = "75%"
+                meterBox.style.background = "orange"
+            } else if (len >= 11) {
+                meterBox.style.width = "100%"
+                meterBox.style.background = "green"
+            } else {
+                meterBox.style.width = "0%"
+            }
+        }
+    </script>
+</body>
+
+</html>

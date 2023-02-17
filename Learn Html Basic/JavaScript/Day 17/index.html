@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <script>
+        var timeOutHandler1, timeOutHandler2;
+
+        function start() {
+            timeOutHandler1 = setTimeout(
+                function() {
+                    console.log("Hello!!!")
+                },
+                5000
+            )
+            timeOutHandler2 = setTimeout(
+                function() {
+                    console.log("Hiii!!!")
+                },
+                5000
+            )
+        }
+
+        function stop() {
+            clearTimeout(timeOutHandler1)
+            clearTimeout(timeOutHandler2)
+        }
+    </script>
+</body>
+
+</html>

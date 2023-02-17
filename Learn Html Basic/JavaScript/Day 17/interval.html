@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="res">10 sec</h1>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+    <script>
+        var timer = 10,
+            intervalHolder;
+
+        function reset() {
+            stop()
+            timer = 10
+            res.innerText = 10 + " sec";
+        }
+
+        function start() {
+            intervalHolder = setInterval(
+                function() {
+                    if (timer == 0) {
+                        stop()
+                            // window.location.href = "https://wscubetech.com"
+                        window.open(
+                            "https://wscubetech.com",
+                            "_blank"
+                        )
+                        return;
+                    }
+                    timer--;
+                    res.innerText = timer + " sec";
+                },
+                1000
+            )
+        }
+
+        function stop() {
+            clearInterval(intervalHolder)
+        }
+
+        // function start() {
+        //     intervalHolder = setInterval(
+        //         function() {
+        //             console.log("Hello")
+        //         },
+        //         1000
+        //     )
+        // }
+    </script>
+</body>
+
+</html>

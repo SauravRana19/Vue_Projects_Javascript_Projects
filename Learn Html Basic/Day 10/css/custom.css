@@ -1,0 +1,32 @@
+.box{
+	width:500px;
+	height: 500px;
+	border:2px red solid;
+	margin: auto;
+	float: left;
+	/*background-image: url('images/3.jpg');*/
+	background: url('../images/3.jpg') no-repeat top right ,url('../images/1.jpg') no-repeat top left;
+	background-size: 200px 200px, cover;
+			/*
+				auto (default value)
+				cover (x:100% y:100%)
+				manually (x:50p y:60px) 
+				contain (manages the width only)
+				*/
+				/*background-repeat: no-repeat;*/
+			/*
+				repeat
+				no-repeat
+				repeat-x
+				repeat-y
+				*/
+				/*background-position: top right;*/
+			/*
+				top
+				left
+				bottom
+				right
+				center
+				*/
+
+}

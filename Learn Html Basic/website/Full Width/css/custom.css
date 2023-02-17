@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/*Universal CSS*/
+section{
+	width: 100%;
+}
+main{
+	width: 1000px;
+	margin: auto;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+/*--------------*/
+
+#top{
+	background: url('../images/bg_img.jpg') top center;
+}
+/*#top main{
+	height: 530px;
+	border:1px blue solid;
+}*/
+.contact{
+	width: 100%;
+}
+#top .contact .left{
+	width: 40%;
+}
+.logo{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+#top .contact .right{
+	width: 40%;
+	text-align: right;
+	
+	font-size: 20px;
+}
+.top-text{
+	margin-top: 10px;
+}
+nav{
+	width: 100%;
+	margin-top: 10px;
+	padding-left: 15px;
+	height: 50px;
+	border-radius: 5px;
+	background: url('../images/menu_rept.jpg');
+}
+nav li{
+	display: inline-block;
+	font-weight: bold;
+	margin: 15px 10px;
+	color: #333333;
+}
+.banner{
+	width: 100%;
+}

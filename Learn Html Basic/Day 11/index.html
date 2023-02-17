@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			font-size: 30px;
+		}
+		.container{
+			width: 1000px;
+			height: 700px;
+			padding: 20px;
+			border:1px black solid;
+			margin: auto;
+		}
+		div{
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div>
+				<label for="name"> Name: </label>
+				<input style="width:500px;" id="name" type="text" placeholder="Please enter name" name="name" >
+			</div>
+			<div>
+				<label for="address"> Address: </label>
+				<textarea placeholder="Please enter address" id="address" name="address"></textarea>
+			</div>
+			<div>
+				Gender <br/>
+				<label for="m">Male</label>
+				<input id="m" checked type="radio" value="M" name="user_gender">
+				<label for="f">Female</label>
+				<input id="f" type="radio" value="F" name="user_gender">
+				<label for="o">Other</label>
+				<input id="o" type="radio" value="O" name="user_gender">
+			</div>
+			<div>
+				Hobbies <br/>
+				<label for="d">Dancing</label>
+				<input id="d" checked value="d" type="checkbox" name="hobbies">
+				<label for="s">Singing</label>
+				<input id="s" checked value="s" type="checkbox" name="hobbies">
+				<label for="p">Playing</label>
+				<input id="p" value="p" type="checkbox" name="hobbies">
+			</div>
+			<div>
+				<label>Country</label>
+				<select name="country">
+					<option>Select a country</option>
+					<option value="+91">India</option>
+					<option selected value="+02">America</option>
+					<option value="+40">Russia</option>
+					<option value="+93">China</option>
+				</select>
+			</div>
+			<div>
+				<label>Resume</label>
+				<input type="file" name="">
+			</div>
+			<div>
+				<input type="submit" value="Save">
+				<input type="reset">
+			</div>
+		</form>
+	</div>
+</body>
+</html>

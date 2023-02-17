@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            padding: 15px;
+            background-color: red;
+            font-size: 30px;
+            margin: 15px;
+        }
+        
+        #model {
+            width: 400px;
+            height: 400px;
+            box-shadow: 0px 0px 5px grey;
+            background-color: black;
+            position: fixed;
+            left: 35%;
+            display: none;
+        }
+        
+        h4 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="model">
+        <h4 style="color:white" onclick="closeModel()">X</h4>
+    </div>
+    <div class="demo" id="test">1</div>
+    <div class="demo">2</div>
+    <div class="demo">3</div>
+    <div class="demo">4</div>
+    <button onclick="clicked()">
+        Click Me
+    </button>
+    <script>
+        // var boxes = document.getElementsByClassName("demo")
+        // var boxes = document.getElementsByTagName("div")
+        // var box = document.getElementById("test")
+        // var box = document.querySelectorAll("div")
+        // console.log(box)
+        // console.log(box.innerText) //get
+        var model = document.getElementById("model")
+
+        function clicked() {
+            model.style.display = "block"
+                // box.innerText = "Changed" //set
+                // box.style.background = "blue"
+                // box.style.color = "white"
+        }
+
+        function closeModel() {
+            model.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>

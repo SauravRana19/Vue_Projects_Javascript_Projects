@@ -1,0 +1,46 @@
+.main{
+	width: 1000px;
+	height: 540px;
+	background-color: #3498db;
+}
+.row1{
+	width:1000px;
+	height: 100px;
+	background-color: #27ae60;
+}
+.row2{
+	width: 1000px;
+	height: 40px;
+	background-color: #f1c40f;
+}
+.menu{
+	width: 200px;
+	height: 40px;
+	float: left;
+	background-color: #e74c3c;
+}
+/*Row 3 css start*/
+.row3{
+	width:1000px;
+	height: 200px;
+	background-color: #f1c40f;
+}
+.row3-left{
+	width: 250px;
+	height: 200px;
+	background-color: #7f8c8d;
+	float: left;
+}
+.side-menu{
+	width: 250px;
+	height: 40px;
+	background-color: #34495e;
+}
+.row3-right{
+	width: 750px;
+	height: 200px;
+	background-color: #d35400;
+	float: right;
+}
+
+/*Row 3 css ends*/

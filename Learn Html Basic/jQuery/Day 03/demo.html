@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            transition: 0.5s;
+            width: 350px;
+            height: 350px;
+            border: 2px red solid;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="append">Append</button>
+    <button id="prepend">Prepend</button>
+    <button id="after">After</button>
+    <button id="before">Before</button>
+    <button id="empty">Empty</button>
+    <button id="remove">Remove</button>
+    <div class="box">
+        <h1>Hello</h1>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        const box = $(".box")
+        $("#append").click(
+            function() {
+                box.append(
+                    `
+                     <h2> I am appended </h2>
+                    `
+                )
+            }
+        )
+
+        $("#prepend").click(
+            function() {
+                box.prepend(
+                    `
+                        <h3> I am prepended </h3>
+                    `
+                )
+            }
+        )
+        $("#after").click(
+            function() {
+                box.after(
+                    `
+                     <h2> I am added after </h2>
+                    `
+                )
+            }
+        )
+
+        $("#before").click(
+            function() {
+                box.before(
+                    `
+                        <h3> I am added before </h3>
+                    `
+                )
+            }
+        )
+
+        $("#empty").click(
+            function() {
+                box.empty()
+            }
+        )
+        $("#remove").click(
+                function() {
+                    box.remove()
+                }
+            )
+            // box.style.background = "red"
+            // box.style.width = "250px"
+            // box.mouseenter(
+            //     function() {
+            //         $(this).css({
+            //             background: "red",
+            //             width: "250px"
+            //         })
+            //     }
+            // )
+            // box.mouseleave(
+            //     function() {
+            //         $(this).css({
+            //             background: "",
+            //             width: "350px"
+            //         })
+            //     }
+            // )
+        box.hover(
+            function() {
+                $(this).css({
+                    background: "red",
+                    width: "250px"
+                })
+            },
+            function() {
+                $(this).css({
+                    background: "",
+                    width: "350px"
+                })
+            }
+        )
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Multiple cursor 
+		CRTL + Click -> sublime
+		ALT + Click -> VS Code
+	 -->
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		.parent{
+			width: 1000px;
+			height: 500px;
+			border:2px red solid;
+			margin: auto;
+			position: relative;	
+		}	
+		.box{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			border:2px blue solid;
+			transition: 1s;
+			font-size: 40px;
+			text-align:center;
+		}
+		.box1{
+			top:0;
+			left: 0;
+		}
+		.box2{
+			top:0;
+			right: 0;
+		}
+		.box:nth-child(3){
+			bottom:0;
+			right: 0;
+		}
+		.box:nth-child(4){
+			bottom:0;
+			left: 0;
+		}
+		.parent:hover .box1{
+			top:400px;
+			left: 900px;
+		}
+		.parent:hover .box2{
+			top:400px;
+			right: 900px;
+		}
+		.parent:hover .box:nth-child(3){
+			bottom:400px;
+			right: 900px;
+		}
+		.parent:hover .box:nth-child(4){
+			bottom:400px;
+			left: 900px;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="box box1">1</div>
+		<div class="box box2">2</div>
+		<div class="box">3</div>
+		<div class="box">4</div>
+	</div>
+</body>
+</html>

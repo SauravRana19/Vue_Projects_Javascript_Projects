@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            margin: 20px auto;
+            height: 250px;
+            background-color: blue;
+        }
+        
+        button {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+    <button id="toggle">Toggle</button>
+    <button id="slideUp">Slide Up</button>
+    <button id="slideDown">Slide Down</button>
+    <button id="slideToggle">Slide Toggle</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="fadeOut">Fade Out</button>
+    <button id="fadeToggle">Fade Toggle</button>
+    <button id="fadeTo">Fade To</button>
+
+    <div class="box"> </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        var box = $(".box")
+        $("#show").click(
+            function() {
+                box.show()
+            }
+        )
+
+        $("#hide").click(
+            function() {
+                box.hide()
+            }
+        )
+
+        $("#toggle").click(
+            function() {
+                box.toggle(1500)
+            }
+        )
+        $("#slideUp").click(
+            function() {
+                box.slideUp(4000)
+            }
+        )
+
+        $("#slideDown").click(
+            function() {
+                box.slideDown(3000)
+            }
+        )
+
+        $("#slideToggle").click(
+            function() {
+                box.slideToggle(2000)
+            }
+        )
+        $("#fadeIn").click(
+            function() {
+                box.fadeIn(4000)
+            }
+        )
+
+        $("#fadeOut").click(
+            function() {
+                box.fadeOut(3000)
+            }
+        )
+
+        $("#fadeToggle").click(
+            function() {
+                box.fadeToggle(2000)
+            }
+        )
+
+        $("#fadeTo").click(
+            function() {
+                box.fadeTo(2000, 0.6)
+            }
+        )
+    </script>
+</body>
+
+</html>

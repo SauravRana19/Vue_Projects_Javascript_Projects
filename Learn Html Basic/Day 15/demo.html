@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.box{
+			width: 400px;
+			height: 400px;
+			box-shadow: 0px 5px 2px grey;
+			margin: 100px auto;
+			border-radius: 4px;
+			position: relative;
+			overflow: hidden;
+		}
+		.overlay{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: 100%;
+			/*right: 100%;*/
+			opacity: 0;
+			background: rgba(0,0,0,0.7);
+			transition: 0.5s;
+			padding: 10px;
+			color: white;
+		}
+		.box:hover .overlay{
+			/*right:0;*/
+			bottom: 0;
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<img src="https://picsum.photos/400/400"/>
+		<div class="overlay">
+			Our objective is to satisfy our customers by making their journey secure and happy. With our One Way Taxi from Rajasthan, the customers only need to pay half of the payment for single -side travel. We strive to provide the best services so that the customer has a comfortable and joyous experience during their journey
+		</div>
+	</div>
+</body>
+</html>

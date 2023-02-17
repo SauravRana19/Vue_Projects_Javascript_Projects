@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="getLs()">Get LS</button>
+    <script>
+        const colors = [
+            'red', 'yellow', 'blue', 'green', 'black'
+        ]
+        localStorage.setItem("colors", JSON.stringify(colors))
+
+        function getLs() {
+            const data = localStorage.getItem("colors")
+            console.log(JSON.parse(data))
+        }
+    </script>
+</body>
+
+</html>

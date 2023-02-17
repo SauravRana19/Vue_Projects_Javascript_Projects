@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        forEach
+        map
+        filter
+     -->
+    <script>
+        const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const even = number.filter(
+            (num) => {
+                return num % 2 != 0;
+                // if (num % 2 == 0) {
+                //     return true;
+                // } else {
+                //     return false;
+                // }
+            }
+        )
+        console.log(even)
+
+        // const colors = [
+        //     'red', 'yellow', 'blue', 'green', 'black'
+        // ]
+
+        // colors.forEach(
+        //     function(d, i) {
+        //         console.log(`The color is ${d}`)
+        //     }
+        // )
+        // const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        // console.log(number)
+        // const table = number.map(
+        //     function(d) {
+        //         return d * 5;
+        //     }
+        // )
+        // console.log(table)
+        // const table = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+    </script>
+</body>
+
+</html>

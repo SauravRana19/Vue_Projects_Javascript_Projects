@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="employee.getFullName()">Click Me</button>
+    <script>
+        // function greet() {
+        //     // alert("Hello")
+        //     setTimeout(
+        //         function() {
+        //             // alert("Hello")
+        //             console.log(this)
+        //         },
+        //         5000
+        //     )
+        // }
+        // 1 sec - 1000 ms
+        // 5 secs - 5000 ms
+        var employee = {
+            fName: "Bhagirath",
+            lName: "Giri",
+            age: 23,
+            profile: "Web Developer",
+            company: "WsCube Tech",
+            getFullName: function() {
+                console.log(this.fName + " " + this.lName)
+                setTimeout(
+                    function() {
+                        // console.log(this)
+                        console.log(this.fName + " " + this.lName)
+                            // console.log(employee.fName + " " + employee.lName)
+                    },
+                    3000
+                )
+                setTimeout(
+                    () => {
+                        // console.log(this)
+                        console.log(this.fName + " " + this.lName)
+                    },
+                    5000
+                )
+            },
+            getNameWithDetails: function() {
+                return `${this.fName} is working in ${this.company}`
+            }
+        }
+    </script>
+</body>
+
+</html>

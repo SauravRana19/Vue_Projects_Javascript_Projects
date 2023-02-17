@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo" style="color:white">
+        <h1>1st</h1>
+    </div>
+    <div class="demo" id="second">
+        <h1>2nd</h1>
+    </div>
+    <div class="demo" id="third">
+        <h1>3rd</h1>
+    </div>
+    <button onclick="demo()">Click Me</button>
+    <script>
+        // var boxes = document.getElementsByTagName('div');
+        // console.log(boxes[0].innerText) //get
+        // console.log(boxes[1].innerHTML) //get
+        // function demo() {
+        //     boxes[0].innerText = "<h1>Hello</h1>" // set
+        //     boxes[1].innerHTML = "<h1>Hello</h1>" // set
+        //     boxes[1].style
+        // }
+        var secondBox = document.getElementById("second")
+        var thirdBox = document.getElementById("third")
+
+        function demo() {
+            secondBox.innerText = "Hello!!"
+            secondBox.style.background = "blue"
+            thirdBox.innerHTML = "<h1>Hello!!</h1>"
+            thirdBox.style.fontSize = "50px"
+                // font-size -> fontSize
+                // background-color -> backgroundColor
+        }
+    </script>
+</body>
+
+</html>

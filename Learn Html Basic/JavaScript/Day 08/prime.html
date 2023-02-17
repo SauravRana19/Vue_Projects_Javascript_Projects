@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var num = 49;
+        var isPrime = true;
+        for (var i = 2; i < num; i++) {
+            // console.log(num, i, num % i)
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        // "" '' ` Testing ${num} the var`
+
+        if (isPrime == true) {
+            console.log(`${num} is a prime number`)
+                // ES6 Template Literals
+        } else {
+            console.log(`${num} is not a prime number`)
+        }
+    </script>
+</body>
+
+</html>

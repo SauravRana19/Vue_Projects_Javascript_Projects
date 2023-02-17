@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        input,
+        button {
+            padding: 15px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <button onclick="clicked()">Click Me</button>
+    <h1 id="res">
+        Please click the button
+    </h1>
+    <script>
+        var inputs = document.querySelectorAll("input")
+
+        function clicked() {
+            var a = inputs[0].value
+            var b = inputs[1].value
+            var c = inputs[2].value
+
+            if (a % 10 == b % 10 && b % 10 == c % 10) {
+                res.innerText = "All three have same last digit"
+            } else {
+                res.innerText = "All three does not have same last digit"
+            }
+        }
+    </script>
+</body>
+
+</html>

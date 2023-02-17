@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="toggleStatus()">Click Me</button>
+    <script>
+        var status = "false";
+
+        function toggleStatus() {
+            console.log(status)
+            if (status == "true") {
+                status = "false";
+            } else {
+                status = "true";
+            }
+        }
+
+        function isEven(num) {
+            if (num % 2 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var a = 2,
+            b = 5
+        var r1 = isEven(a)
+        var r2 = isEven(b)
+        console.log(b, r2)
+        console.log(a, r1)
+    </script>
+</body>
+
+</html>

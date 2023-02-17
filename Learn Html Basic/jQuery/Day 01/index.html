@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            width: 250px;
+            height: 100px;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+    <button onclick="demo()">Click</button>
+    <button onclick="demo2()">Click 2</button>
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var demoBoxes = document.querySelectorAll(".demo")
+        var boxes = $(".demo") // selector of jquery
+        console.log(boxes)
+
+        function demo() {
+            // demoBoxes.slideUp()
+            boxes.slideUp()
+
+        }
+
+        function demo2() {
+            boxes.slideDown()
+        }
+    </script>
+</body>
+
+</html>

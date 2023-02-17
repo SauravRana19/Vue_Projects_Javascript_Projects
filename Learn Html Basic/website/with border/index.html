@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+			/*select all*/
+			font-family: verdana;
+			margin: 0;
+			padding: 0;
+		}
+		.main{
+			width: 1000px;
+			height: 540px;
+			border:2px black solid;
+			margin: auto;
+		}	
+		.row1{
+			width: 996px;
+			/* 996 + 2 + 2 = 1000*/
+			height: 76px;
+			/*76 + 2 + 2 + 20 = 100*/
+			border:2px red solid;
+			font-size: 40px;
+			text-align: center;
+			padding-top: 20px;
+			/* 16px */
+		}
+		.row2{
+			width: 1000px;
+			height: 40px;
+			/*border:2px blue solid;*/
+		}
+		.col{
+			width: 198px;
+			height: 33px;
+			text-align: center;
+			font-size: 20px;
+			padding-top: 5px;
+			border:1px black solid;
+			float: left;
+		}
+		.row3{
+			width: 1000px;
+			height: 200px;
+		}
+		.left{
+			width: 250px;
+			height: 200px;
+			float: left;
+		}
+		.left-col{
+			width: 248px;
+			text-align: center;
+			font-size: 20px;
+			height: 33px;
+			padding-top: 5px;
+			border:1px black solid;
+		}
+		.right{
+			width: 750px;
+			height: 200px;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="row1">
+			WsCube Tech
+		</div>
+		<div class="row2">
+			<div class="col">Home</div>
+			<div class="col">About Us</div>
+			<div class="col">Courses</div>
+			<div class="col">Gallery</div>
+			<div class="col">Contact Us</div>
+		</div>
+		<div class="row3">
+			<div class="left">
+				<div class="left-col">Home</div>
+				<div class="left-col">About Us</div>
+				<div class="left-col">Courses</div>
+				<div class="left-col">Gallery</div>
+				<div class="left-col">Contact Us</div>
+				<!-- CRTL + D -->
+			</div>
+			<div class="right">
+				<img src="https://picsum.photos/750/200">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
