@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Drag&Drop</title>
+
+</head>
+<style>
+    ol {
+        width: max-content;
+
+        font-size: 5vw;
+
+        border-radius: 5px;
+        margin-left: 30rem;
+
+    }
+
+    li {
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+
+
+    .box {
+        width: 300px;
+        margin-left: 100px;
+        display: inline-block;
+        border: 2px solid rgb(36, 173, 241);
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    .item {
+        background-color: rgb(210, 210, 106);
+        width: 150px;
+        height: 150px;
+        border-radius: 5px;
+        margin: 5rem 0 0 5rem;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    h1 {
+        margin-left: 30rem;
+    }
+
+    .drag-over {
+        border: dashed 3px red;
+    }
+</style>
+
+<body>
+    <!-- <div>
+        <ol>
+            <li draggable="true" >ajay&emsp;&emsp;&emsp;&#8801;</li>
+            <li draggable="true" >saurav&emsp;&emsp;&#8801;</li>
+            <li draggable="true" >sahil&emsp;&emsp;&ensp;&nbsp;&#8801;</li>
+            <li draggable="true" >lakshita&emsp;&ensp;&#8801;</li>
+        </ol>
+    </div> -->
+    <div>
+        <h1>JavaScript - Drag and Drop</h1>
+        <div class="drop-targets">
+            <div class="box">
+                <div class="item" id="item" draggable="true">
+                </div>
+            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+</body>
+<script src="./javascript.js"></script>
+
+</html>
