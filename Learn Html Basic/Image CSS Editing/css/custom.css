@@ -4,7 +4,7 @@
 	border:2px red solid;
 	margin: auto;
 	float: left;
-	/*background-image: url('images/3.jpg');*/
+	background-image: url('images/3.jpg');
 	background: url('../images/3.jpg') no-repeat top right ,url('../images/1.jpg') no-repeat top left;
 	background-size: 200px 200px, cover;
 			/*
