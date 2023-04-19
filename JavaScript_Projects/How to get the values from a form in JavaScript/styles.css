@@ -1,0 +1,136 @@
+/* I always reset all the html elements */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	min-height: 100vh;
+	color: #555;
+}
+
+form{
+	/*max-width: 400px;*/
+	/*margin: 50px auto;*/
+	border:  thin solid #e4e4e4;
+	padding: 20px;
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+form label{
+	display: block;
+	margin-bottom: 10px;
+	/*padding-left: 5px;*/
+	color: #32749a;
+}
+
+form input, form textarea{
+	display: block;
+	width:  100%;
+	padding: 10px;	
+	font-size: 16px;
+	border:  thin solid #e4e4e4;
+	margin-bottom: 30px;
+}
+
+form select{
+	display: block;
+	width:  100%;
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 16px;
+	border:  thin solid #e4e4e4;
+	background-color: white;
+	color: #555;
+}
+
+form input:focus,
+form select:focus,
+form textarea
+{
+	outline: none;
+}
+
+form textarea{
+	min-height: 80px;
+}
+
+form input::placeholder{
+	font-size: 16px;
+}
+
+form button{
+	background: #32749a;
+	color: white;
+	border: none;	
+	padding: 15px;
+	width:  100%;
+	font-size: 16px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+form button:active{
+	background-color: green;
+}
+
+.radio-buttons{
+	margin-top: 40px;	
+}
+.radio-buttons input{
+	display: inline-block;
+	width: auto;
+}
+.radio-buttons span{
+	padding-left: 20px;
+}
+.radio-buttons span:nth-child(2){
+	padding-left: 0;
+}
+
+.checkboxes{
+	margin-top: 20px;
+}
+.checkboxes input{
+	width: auto;
+	display: inline-block;
+}
+.checkboxes span{
+	padding-left: 20px;
+}
+.checkboxes span:nth-child(2){
+	padding-left: 0;
+}
+.checkboxes{}
+
+.out{
+	/*max-width: 400px;*/
+	/*width: auto;*/
+	font-size: 17px;
+	/*margin: 20px auto 0 auto;*/
+	line-height: 28px;
+	/*border: thin solid red;*/
+}
+
+.out span{
+	font-weight: bold;
+	color:  #32749a;
+}
+
+.page{
+	max-width: 930px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	grid-gap: 100px;
+	/*margin-top: 50px;*/
+	/*border: thin solid silver;*/
+	padding: 20px;
+	margin: 0 auto;
+}
+
+textarea{
+	height: 50px;
+}
